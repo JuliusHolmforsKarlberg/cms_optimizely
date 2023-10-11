@@ -1,0 +1,19 @@
+﻿﻿@using Nackademin2023v2.Models.ViewModels
+@using Nackademin2023v2.Models.Pages
+
+@model IPageViewModel<SitePageData>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta title="@Model.CurrentPage.MetaTitle" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
