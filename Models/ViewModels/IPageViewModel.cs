@@ -6,7 +6,7 @@ namespace Nackademin2023v2.Models.ViewModels
     {
         T CurrentPage { get; }
 
-        LayoutModel Layout { get; }
+        LayoutModel Layout { get; set; }
 
         IContent Section { get; }
     }

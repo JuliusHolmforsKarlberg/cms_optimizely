@@ -3,6 +3,7 @@ using EPiServer.Cms.UI.AspNetIdentity;
 using EPiServer.Scheduler;
 using EPiServer.ServiceLocation;
 using EPiServer.Web.Routing;
+using Nackademin2023v2.Business.Extensions;
 
 namespace Nackademin2023v2
 {
@@ -27,6 +28,7 @@ namespace Nackademin2023v2
 			services
 				.AddCmsAspNetIdentity<ApplicationUser>()
 				.AddCms()
+				.AddNackademin()
 				.AddAdminUserRegistration()
 				.AddEmbeddedLocalization<Startup>();
 		}

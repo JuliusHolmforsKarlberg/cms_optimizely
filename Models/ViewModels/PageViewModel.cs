@@ -10,7 +10,7 @@ namespace Nackademin2023v2.Models.ViewModels
             CurrentPage = currentPage;
         }
 
-        public T CurrentPage { get; private set; }
+        public T CurrentPage { get; set; }
 
         public LayoutModel Layout { get; set; }
 

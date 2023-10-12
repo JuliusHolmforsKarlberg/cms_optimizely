@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Nackademin2023v2.Business.Extensions;
+using System.ComponentModel.DataAnnotations;
 using static Nackademin2023v2.Globals;
 
 namespace Nackademin2023v2.Models.Pages
@@ -16,7 +17,7 @@ namespace Nackademin2023v2.Models.Pages
             {
                 var metaTitle = this.GetPropertyValue(p => p.MetaTitle);
 
-                return !string.IsNullOrEmpty(metaTitle) ? metaTitle : PageName;
+                return metaTitle.IsNotNullOrWhiteSpace() ? metaTitle : PageName;
             }
 
             set => this.SetPropertyValue(p => p.MetaTitle, value);

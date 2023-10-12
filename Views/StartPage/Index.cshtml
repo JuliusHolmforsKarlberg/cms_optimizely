@@ -1,5 +1,16 @@
-﻿@using Nackademin2023v2.Models.ViewModels
+﻿﻿@using EPiServer.Web.Mvc.Html
+@using Nackademin2023v2.Models.ViewModels
 
 @model StartPageViewModel
 
 <h1>@Model.CurrentPage.Heading</h1>
+
+<div>@Model.CurrentPage.Preamble</div>
+
+<div>@Html.Raw(Model.CurrentPage.MainBody)</div>
+
+<h1>START PAGE ID: @Model.Layout.StartPage.ContentLink.ID</h1>
+
+<h1>SETTINGS PAGE ID: @Model.Layout.SettingsPage.ContentLink.ID</h1>
+
+<img src="@Url.ContentUrl(Model.CurrentPage.Image)" />
