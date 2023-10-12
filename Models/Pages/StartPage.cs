@@ -39,12 +39,12 @@ namespace Nackademin2023v2.Models.Pages
             Order = 30
         )]
         [UIHint(UIHint.Textarea)]
-        public virtual XhtmlString? Preamble { get; set; }
+        public virtual XhtmlString Preamble { get; set; }
 
         [Display(
             GroupName = SystemTabNames.Content,
             Order = 40
         )]
-        public virtual XhtmlString? MainBody { get; set; }
+        public virtual XhtmlString MainBody { get; set; }
     }
 }

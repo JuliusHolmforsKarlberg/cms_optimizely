@@ -5,7 +5,7 @@
 
 <h1>@Model.CurrentPage.Heading</h1>
 
-<div>@Model.CurrentPage.Preamble</div>
+<div>@Html.Raw(Model.CurrentPage.Preamble)</div>
 
 <div>@Html.Raw(Model.CurrentPage.MainBody)</div>
 
